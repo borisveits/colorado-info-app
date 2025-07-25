@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<h1>Welcome to state of Colorado population projections</h1>
+
+<div>
+  <p class="text-block">
+    In this website, you will get familiar with the state of Colorado.<br>
+    You will see the population projections of the state by county.<br>
+    In addtion you can check the counties history which is taken from <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>.<br>
+    In the itinerary search you can choose county name and a type of itinerary. <br>
+    A map of itineraries locations will be displayed.
+  </p>
+
+    <img src="/static/img/welcome_co_sign.jpg" alt="Welcome_CO" class="image1">
+ </div>
+
+<div class="text-block">
+  <h2>
+    {{ title }}
+  </h2>
+  <p>
+    {{ summary }}
+    <br>
+  </p>
+</div>
+
+<img src="/static/img/MaroonBells.jpg" alt="MaroonBells" class="image2">
+
+{% endblock %}
+
+
